@@ -1,0 +1,75 @@
+.outerFrame{
+    background: #0C1810;
+    height: 100vh;
+}
+.bg{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    
+}
+.bg img{
+    opacity: .5;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.commonFrame{
+    width: 1400px;
+    margin: 0 auto;
+    height: 100%;
+}
+.commonFrame.hero{
+    position: relative;
+    /* background: url(../img/background/greenbg.png) no-repeat 50% 50% / cover; */
+    
+    /* border: 10px solid red; */
+    height:100%;
+    
+}
+
+ul li{
+    list-style: none;
+}
+.station1{
+    /* border: 1px solid red; */
+    width:100%;
+    height:100%;
+}
+.station1 .swiper-slide{
+    opacity: 0!important;
+}
+.station1 .swiper-slide.swiper-slide-active{
+    opacity: 1!important;
+}
+.station1 img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.station2.swiper{
+    position: absolute;
+    z-index: 10;
+    right:0;
+    top:0;
+    width:270px;
+    /* height:100%; */
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+}
+.station2 img {
+    width: 200px;
+    height: auto;
+}
+.station2>.swiper-wrapper .swiper-slide {
+    height: 260px; /* 슬라이드 높이를 설정하여 spaceBetween이 적용되도록 */
+}
+.btn_common{
+    background: url(../img/ico/btn_common.png) no-repeat 50% 50% / cover;
+    width: 200px;
+    height: 50px;
+}
+

@@ -1,0 +1,34 @@
+/* //////스타일 초기화////// */
+*{
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6{
+    font-size: inherit;
+    /* 글씨크기를 부모태그에 적용된 글시크기로 적용 - 상속시키겠다*/
+    font-weight: inherit;
+    line-height: 1.1;
+}
+strong.b{
+    font-weight: inherit;
+}
+i,em,address{
+    font-style: inherit;
+}
+a{
+    color: inherit;
+    text-decoration: inherit;
+}
+ul,ol,li{
+    list-style: none;
+}
+img,video{
+    max-width: 100%;
+}
+input{
+    outline: 0;
+}
+html{
+    word-break: keep-all;
+}
+/* /////스타일 초기화///// */

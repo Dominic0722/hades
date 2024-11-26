@@ -1,7 +1,41 @@
 .outerFrame{
-    background: #0C1810;
+    /* background: #0C1810; */
     height: 100vh;
 }
+@font-face {
+    font-family: "kenris";
+    
+    src: url("../fonts/kenris.ttf") format("ttf");
+  }
+  html{
+    font-family: "kenris";
+  }
+
+  .btn_buy{
+    width: 150px;
+    height: 50px;
+    background-image:url(../img/ico/btn_mo.svg) ;
+  }
+  .btn_buy:hover{
+    
+  }
+canvas {
+    background-color: #010201;
+    position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+  }
+  .wrap{
+    position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 30px;
+      z-index: 2; /* 캔버스 위에 표시될 내용물 */
+      text-align: center;
+  }
 .bg{
     position: fixed;
     width: 100%;

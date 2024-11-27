@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,57 +10,77 @@
     <link rel="stylesheet" href="./css/reset.css">
     <script src="./js/jquery-1.12.3.js"></script>
     <script src="./js/index.js"></script>
-    
+
     <!-- swiper js -->
-    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
-<body>
-    <!-- <canvas id="particleCanvas"></canvas> -->
-    <header>
-        <a href="/index.html"><img src="./img/logo_header 1.png" alt="하데스로고"></a>
-        <ul class="gnb">
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">CHARACTERS</a></li>
-            <li><a href="#">NEWS & UPDATES</a></li>
-            <li><a href="#">TEAM</a></li>
-            <li><a href="#">MERCH</a></li>
-        </ul>
-       <div class="btn_buy"></div>
-    </header>
-    <div class="wrap">
-    <div class="bg"><img src="./img/background/smoke-effect3.png" alt="smokeeffect"></div>
-    <div class="outerFrame">
-        
-        <div class="commonFrame hero">
-            <div class="station1 swiper">
-                <ul class="train swiper-wrapper">
-                    <li class="swiper-slide">
-                        <a href="#"><img src="./img/characters/hero-artemis.png" alt=""></a></li>
-                    <li class="swiper-slide"><a href="#"><img src="./img/characters/hero-athena.png" alt=""></a></li>
-                    <li class="swiper-slide"><a href="#"><img src="./img/characters/hero-Charon.png" alt=""></a></li>
-                    <li class="swiper-slide"><a href="#"><img src="./img/characters/hero-hades.png" alt=""></a></li>
-                    <li class="swiper-slide"><a href="#"><img src="./img/characters/hero-hephaestus.png" alt=""></a></li>
-                    <li class="swiper-slide"><a href="#"><img src="./img/characters/hero-melinoe.png" alt=""></a></li>
-                </ul>
-            </div>
-            <div class="station2 swiper">
-                <ul class="train swiper-wrapper">
-                    <li class="swiper-slide"><a href="#"><img src="./img/characters/CodexPortrait_Artemis.webp" alt=""></a></li>
-                    <li class="swiper-slide"><a href="#"><img src="./img/characters/CodexPortrait_Athena.webp" alt=""></a></li>
-                    <li class="swiper-slide"><a href="#"><img src="./img/characters/CodexPortrait_Charon.webp" alt=""></a></li>
-                    <li class="swiper-slide"><a href="#"><img src="./img/characters/CodexPortrait_Hades.webp" alt=""></a></li>
-                    <li class="swiper-slide"><a href="#"><img src="./img/characters/CodexPortrait_Hephaestus.webp" alt=""></a></li>
-                    <li class="swiper-slide"><a href="#"><img src="./img/characters/CodexPortrait_Melinoe.webp" alt=""></a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
 
-    <div class="btn_common">
-        <a href="#">BUY NOW</a>
+<body>
+    <canvas id="particleCanvas"></canvas>
+    <div class="headerbg">
+        <header>
+            <a href="/index.html" class="logo"></a>
+            <ul class="gnb">
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CHARACTERS</a></li>
+                <li><a href="#">NEWS & UPDATES</a></li>
+                <li><a href="#">TEAM</a></li>
+                <li><a href="#">MERCH</a></li>
+            </ul>
+            <div class="btn_buy"></div>
+        </header>
     </div>
-</div>
+    <div class="wrap">
+        <div class="hero">
+            <img src="./img/magic_circle1.png" alt="" class="image image1">
+            <img src="./img/main1-1trc.png" alt="" class="image image2">
+            <div class="overlay"></div>
+        </div>
+        <!-- <div class="bg"><img src="./img/background/smoke-effect3.png" alt="smokeeffect"></div> -->
+        <!-- <div class="outerFrame">
+
+            <div class="commonFrame hero">
+                <div class="station1 swiper">
+                    <ul class="train swiper-wrapper">
+                        <li class="swiper-slide">
+                            <a href="#"><img src="./img/characters/hero-artemis.png" alt=""></a>
+                        </li>
+                        <li class="swiper-slide"><a href="#"><img src="./img/characters/hero-athena.png" alt=""></a>
+                        </li>
+                        <li class="swiper-slide"><a href="#"><img src="./img/characters/hero-Charon.png" alt=""></a>
+                        </li>
+                        <li class="swiper-slide"><a href="#"><img src="./img/characters/hero-hades.png" alt=""></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="./img/characters/hero-hephaestus.png" alt=""></a>
+                        </li>
+                        <li class="swiper-slide"><a href="#"><img src="./img/characters/hero-melinoe.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="station2 swiper">
+                    <ul class="train swiper-wrapper">
+                        <li class="swiper-slide"><a href="#"><img src="./img/characters/CodexPortrait_Artemis.webp"
+                                    alt=""></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="./img/characters/CodexPortrait_Athena.webp"
+                                    alt=""></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="./img/characters/CodexPortrait_Charon.webp"
+                                    alt=""></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="./img/characters/CodexPortrait_Hades.webp"
+                                    alt=""></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="./img/characters/CodexPortrait_Hephaestus.webp"
+                                    alt=""></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="./img/characters/CodexPortrait_Melinoe.webp"
+                                    alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- <div class="btn_common">
+            <a href="#">BUY NOW</a>
+        </div> -->
+    </div>
     <script src="./js/particle.js"></script>
 </body>
+
 </html>

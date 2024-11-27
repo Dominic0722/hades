@@ -2,6 +2,94 @@
     /* background: #0C1810; */
     height: 100vh;
 }
+.headerbg{
+    background-color: #000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 50;
+    width: 100%;
+}
+.logo{
+    
+    width: 50px;
+    height: 50px;
+    background: url(../img/logo_header\ 1.png) no-repeat 50% 50%/ contain;
+}
+.logo:hover{
+    background: url(../img/logo_header-2.png) no-repeat 50% 50%/ contain;
+}
+body{
+    background-color: #000;
+}
+.wrap{
+    
+}
+.hero{
+    position: relative;
+    width: 1200px;
+    height: 700px;
+    box-sizing: border-box;
+    overflow: hidden;
+    
+    margin-bottom: 100px;
+}
+.image{
+    position: absolute;
+    width: 100%;
+    
+    left: 0;
+    
+}
+.image2{
+    
+}
+.image1{
+    animation: rotate 25s linear infinite;
+    bottom: -130px;
+    
+}
+.overlay {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 1) 100%);
+}
+@keyframes rotate {
+    from {
+      transform: rotate(0deg); /* 시작할 때 0도 */
+    }
+    to {
+      transform: rotate(360deg); /* 끝날 때 360도 (한 바퀴 회전) */
+    }
+  }
+.hero img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    height: 100px;
+    color: #fff;
+}
+header ul{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    width: 1000px;
+    justify-content: end;
+}
+.wrap{
+    margin-top: 100px;
+}
 @font-face {
     font-family: "kenris";
     
@@ -14,11 +102,13 @@
   .btn_buy{
     width: 150px;
     height: 50px;
-    background-image:url(../img/ico/btn_mo.svg) ;
+    background: url(../img/ico/btn_mo.svg) no-repeat 50% 50% / contain;
+    cursor: pointer;
   }
   .btn_buy:hover{
-    
+    background: url(../img/ico/btn_mo_hover.svg) no-repeat 50% 50% / contain;
   }
+
 canvas {
     background-color: #010201;
     position: absolute;

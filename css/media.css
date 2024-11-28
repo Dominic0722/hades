@@ -1,0 +1,33 @@
+@media (max-width:888px) {
+    .hero{
+        padding-top: 200px;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .image2 {
+        left: 50%;
+        
+    }
+
+    .image1 {
+        left: 50%;
+        width: 78%;
+        height: 147%;
+        
+    }
+    .hades2logo{
+        margin: 0;
+        width: 300px;
+    }
+    .herotxt{
+        margin: 0;
+        
+    }
+    .herotxt h2{
+        font-size: 25px;
+    }
+    .herotxt h2:last-of-type{
+        font-size: 20px;
+    }
+}

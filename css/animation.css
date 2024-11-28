@@ -1,0 +1,46 @@
+@keyframes rotate {
+    0% {
+      transform:translate(-50%, 78%)rotate(0deg); /* 시작할 때 0도 */
+      opacity: 1;
+    }
+    10%{
+        opacity: 0.5;
+    }
+    20%{
+        opacity: 1;
+    }
+    30%{
+        opacity: 0.5;
+    }
+    40%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    60%{
+        opacity: 0.9;
+    }
+    70%{
+        opacity: 0.5;
+    }
+    80%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 0.5;
+    }
+    100% {
+      transform:translate(-50%, 78%)rotate(360deg); /* 끝날 때 360도 (한 바퀴 회전) */
+      opacity: 0.9;
+    }
+  }
+
+@keyframes breathe {
+    0%, 100% {
+      transform: translate(-50%) scale(1); /* 원래 위치 */
+    }
+    50% {
+        transform: translate(-50%, calc(0% - 5px)) scale(1.02);
+    }
+  }

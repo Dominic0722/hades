@@ -8,19 +8,32 @@ window.addEventListener("load", function () {
     }
   })
   const station2 = new Swiper(".station2", {
-    slidesPerView: 3.5,
-    direction: 'vertical',
     loop: true,
-    spaceBetween: 100,
     freeMode: true,
+    breakpoints: {
+      280: {
+        direction: "horizontal",
+        spaceBetween: 14,
+        slidesPerView: 3.2,
+      },
+      890: {
+        direction: "vertical",
+        spaceBetween: 20,
+        slidesPerView: 'auto',
+      },
+    },
 
   })
 
   station2.on('slideChange', function () {
+    // 슬라이드2번째가 어떤 변경사항이 있을 때 마다 실행되는 소스코드
+    // 여기서 의미하는 realIndex 는 현재 루프모드 상황인데 루프모드 상황 안에서 보여지는 슬라이드의 순번을 의미 0,1,2,...
     // console.log(station3.realIndex);
     station1.slideToLoop(station2.realIndex)
-
-
+    station3list_array.forEach(function(litag){
+      litag.classList.remove("on")
+    })
+    station3list_array[station2.realIndex].classList.add("on")
   });
 
   let station3list_array = this.document.querySelectorAll(".station3 li")
@@ -44,6 +57,7 @@ window.addEventListener("load", function () {
   })
 
 
+
   // 동영상 재생/일시정지
   const video = document.getElementById('trailer');
 
@@ -55,19 +69,16 @@ window.addEventListener("load", function () {
       video.pause(); // 비디오 일시정지
     }
   });
-  // let count=0
-  // let slide=this.document.querySelectorAll(".station3 .train>li")
-  // setInterval(function(){
-  //     count++
-  //     if(count>5){count=0}
-  //     slide[0].classList.remove("on")
-  //     slide[1].classList.remove("on")
-  //     slide[2].classList.remove("on")
-  //     slide[3].classList.remove("on")
-  //     slide[4].classList.remove("on")
-  //     slide[5].classList.remove("on")
-  //     slide[count].classList.add("on")
-  // },2500)
+  let btn_open=this.document.querySelector(".btn_open")
+  let hidden_gnb=this.document.querySelector(".hidden_gnb")
+  let btn_close=this.document.querySelector(".btn_close")
+
+  btn_open.addEventListener("click",function(){
+    hidden_gnb.classList.add("on")
+  })
+  btn_close.addEventListener("click",function(){
+    hidden_gnb.classList.remove("on")
+  })
 
 
 

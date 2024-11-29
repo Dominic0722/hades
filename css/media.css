@@ -1,33 +1,124 @@
+
+.mo{display: none;}
+.pc{display: block;}
+
+@media(max-width:1400px) {
+    .commonFrame {
+        width: 90%;
+        margin: 0 auto;
+        height: 100%;
+    }
+
+    header ul {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+
+
+    }
+}
+
 @media (max-width:888px) {
-    .hero{
+    .hero {
         padding-top: 200px;
         justify-content: flex-start;
         align-items: center;
     }
+    .headerbg.mo{
+        padding: 0 1rem;
+    }
+    .mo_gnb{
+        border: 1px solid yellow;
+        height: 80vh;
+    }
+   .mo_gnb a{
+        display: flex;
+        height: 2.5rem;
+        padding: 0 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+  
+    .header_top_mo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+    }
+    .hidden_gnb{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        padding: 1rem;
+        box-sizing: border-box;
+        background-color: var(--dark-color);
+        transform: translateX(100%);
+        transition: all .4s ease 0s;
+        color: #fff;
+        z-index: 55;
+    }
+    .hidden_gnb.on{
+        transform: translateX(0);
+    }
+    .hidden_gnb_top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .mo {
+        display: block;
+    }
+    .pc{display: none;}
+   
 
     .image2 {
         left: 50%;
-        
+
     }
 
     .image1 {
         left: 50%;
         width: 78%;
         height: 147%;
-        
+
     }
-    .hades2logo{
+
+    .hades2logo {
         margin: 0;
         width: 300px;
     }
-    .herotxt{
+
+    .herotxt {
         margin: 0;
-        
+
     }
-    .herotxt h2{
+
+    .herotxt h2 {
         font-size: 25px;
     }
-    .herotxt h2:last-of-type{
+
+    .herotxt h2:last-of-type {
         font-size: 20px;
+    }
+
+    .station2 img {
+        width: auto;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .station2.swiper {
+        position: absolute;
+        z-index: 10;
+        right: 0;
+        top: 0;
+        width: 90%;
+        /* height:100%; */
+        height: 100vh;
+        flex-direction: column;
+        display: flex;
+        border: 1px solid yellow;
     }
 }

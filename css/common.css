@@ -9,20 +9,27 @@ html{
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+    font-size: 16px;
   }
 h2 {
     font-family: "kenris";
-    font-size: 40px;
-    background: linear-gradient(#71DC90, #FFF);
+    font-size: 2rem;
+    background: linear-gradient(45deg,#71DC90, #FFF);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
 }
 h3{
     font-family: "kenris";
-    font-size: 30px;
+    font-size: 1.875rem;
+}
+h4{
+    font-family: "Alegreya";
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: 200;
 }
 th{
     font-family: "kenris";
-    font-size: 18px;
+    font-size: 1.125;
 }

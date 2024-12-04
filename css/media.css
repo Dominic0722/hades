@@ -17,6 +17,116 @@
 
     }
 }
+@media (max-width:1200px){
+    .overlay {
+        
+        left: 0;
+        
+    }
+    
+}
+@media (max-width:968px){
+
+    html{
+        font-size: 14px;
+    }
+    .bg {
+        background: url('../img/background/smoke-effect-mo.png') no-repeat center center / cover;
+        background-attachment: fixed;
+    }
+    .outerFrame{
+        background: url('../img/background/smoke-effect-mo.png') no-repeat center center / cover;
+        background-attachment: fixed;
+    }
+    .hero1 {
+
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        z-index: 1; 
+        
+        
+    }
+    .hero1txt {
+        width: 600px;
+        
+        margin: 0;
+    }
+    
+    .hero.commonFrame {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        box-sizing: border-box;
+        overflow: hidden;
+        display: flex;
+        color: #fff;
+        flex-direction: column;
+        justify-content: end;
+        text-align: center;
+        z-index: 1;
+        
+        
+    }
+    .station2 img {
+        width: 150px;
+        height: auto;
+        object-fit: contain;
+    }
+    .station1 img{
+        
+        width: 100%;
+        height: 100%;
+        position: absolute !important;
+        left: 100px;
+        top: 0;
+        z-index: -1 !important;
+        
+    }
+
+    .station2.swiper {
+        position: absolute;
+        z-index: 10;
+        left: 0;
+        top: 0;
+        width: 100%;
+        
+        height: 200px;
+        flex-direction: column;
+        display: flex;
+        
+        
+    }
+    .station3{
+        width: 50%;
+        
+        text-align: start;
+        margin-top: 50px;
+        
+        position: absolute;
+        left: 20px;
+        top: 180px;
+        
+    }
+    .station3 li p{
+        overflow: auto;
+        height: 250px;
+
+    }
+    table {
+        width: 90vw;
+        background: rgba(0, 0, 0, 0.747);
+    
+    }
+    table th span {
+
+ 
+        font-size: 14px;
+        padding-left: .5rem;
+    }
+
+}
 
 @media (max-width:888px) {
     .hero {
@@ -28,7 +138,7 @@
         padding: 0 1rem;
     }
     .mo_gnb{
-        border: 1px solid yellow;
+        
         height: 80vh;
     }
    .mo_gnb a{
@@ -103,22 +213,15 @@
         font-size: 20px;
     }
 
-    .station2 img {
-        width: auto;
-        height: 100%;
-        object-fit: contain;
-    }
 
-    .station2.swiper {
-        position: absolute;
-        z-index: 10;
-        right: 0;
-        top: 0;
-        width: 90%;
-        /* height:100%; */
-        height: 100vh;
-        flex-direction: column;
-        display: flex;
-        border: 1px solid yellow;
+}
+@media (max-width:500px){
+    .bg {
+        background: url('../img/background/smoke-effect-mosmal.png') no-repeat center center / cover;
+        background-attachment: fixed;
+    }
+    .outerFrame{
+        background: url('../img/background/smoke-effect-mosmal.png') no-repeat center center / cover;
+        background-attachment: fixed;
     }
 }

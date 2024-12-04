@@ -42,19 +42,20 @@ body {
 .gnb{
     padding-right: 10px;
 }
-.hero {
+.hero1 {
     position: relative;
     width: 100%;
     height: 100vh;
     box-sizing: border-box;
-    overflow: hidden;
-    display: flex;
+    overflow: hidden; 
+    display:flex;
     color: #fff;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    z-index: 1;
-    /* margin-bottom: 100px; */
+    z-index: 1; 
+    
+    
 }
 
 .hades2logo {
@@ -63,12 +64,12 @@ body {
 
 }
 
-.herotxt {
+.hero1txt {
     width: 600px;
     margin-left: 10vw;
 }
 
-.herotxt h2:last-of-type {
+.hero1txt h2:last-of-type {
     font-size: 30px;
     color: #fff;
     padding-top: 15px;
@@ -157,13 +158,14 @@ canvas {
     color: white;
     font-size: 30px;
     z-index: 2;
-    /* 캔버스 위에 표시될 내용물 */
+    
     text-align: center;
 }
 
 .bg {
     background: url('../img/background/smoke-effect3.png') no-repeat center center / cover;
     background-attachment: fixed;
+    
 
 }
 
@@ -207,10 +209,7 @@ video {
 .swiper-slide{
     display: flex;
 }
-.station1txt{
-    width: 600px;
-    text-align: left;
-}
+
 table {
     border: 1px solid var(--main-color);
     width: 600px;
@@ -219,14 +218,14 @@ table {
 th,
 td {
     text-align: start;
-    padding-left: 10px;
-    padding-top: 5px;
+    padding-left: .5rem;
+    padding-top: .25rem;
     padding-right: 0;
-    padding-bottom: 5px;
+    padding-bottom: .25rem;
 }
 
 table th:last-of-type {
-    padding-bottom: 10px;
+    padding-bottom: .5rem;
 }
 
 table td:nth-of-type(2),
@@ -250,13 +249,13 @@ table th span {
 
 .commonFrame.hero {
     position: relative;
-    /* background: url(../img/background/greenbg.png) no-repeat 50% 50% / cover; */
-    /* border: 10px solid red; */
+   
+   
     height: 100%;
 }
 
 .station1 {
-    /* border: 1px solid red; */
+    
     width: 100%;
     height: 100%;
     position: absolute !important;
@@ -291,7 +290,7 @@ table th span {
     height: 100vh;
     flex-direction: column;
     display: flex;
-    border: 1px solid yellow;
+    
 }
 
 .station2 img {
@@ -307,8 +306,11 @@ table th span {
 .station3{
     width: 50%;
     height: 100%;
-    text-align: start;
+    text-align: left;
     margin-top: 50px;
+    
+    color: #fff;
+    
 }
 
 .station3 .train{

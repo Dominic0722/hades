@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Only Selected Item</title>
+</head>
+<body>
+    <label>
+        <input type="checkbox" id="checkbox1" onclick="toggleItems()"> Show Item 1
+    </label>
+    <label>
+        <input type="checkbox" id="checkbox2" onclick="toggleItems()"> Show Item 2
+    </label>
+    <label>
+        <input type="checkbox" id="checkbox3" onclick="toggleItems()"> Show Item 3
+    </label>
+
+    <div class="item" id="item1">
+        This is Item 1
+    </div>
+    <div class="item" id="item2">
+        This is Item 2
+    </div>
+    <div class="item" id="item3">
+        This is Item 3
+    </div>
+
+    <script>
+        // 페이지 로드 시 모든 아이템이 보이도록 설정
+        window.onload = function() {
+            document.querySelectorAll('.item').forEach(item => {
+                item.style.display = 'block';
+            });
+        };
+
+        function toggleItems() {
+            // 모든 체크박스 요소를 선택
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            let anyChecked = false;
+
+            // 모든 아이템을 숨김
+            document.querySelectorAll('.item').forEach(item => {
+                item.style.display = 'none';
+            });
+
+            // 체크된 체크박스가 있는지 확인하고 해당 아이템을 보이도록 함
+            checkboxes.forEach((checkbox, index) => {
+                if (checkbox.checked) {
+                    document.getElementById(`item${index + 1}`).style.display = 'block';
+                    anyChecked = true;
+                }
+            });
+
+            // 체크된 체크박스가 없는 경우 모든 아이템을 보이게 함
+            if (!anyChecked) {
+                document.querySelectorAll('.item').forEach(item => {
+                    item.style.display = 'block';
+                });
+            }
+        }
+    </script>
+</body>
+</html>

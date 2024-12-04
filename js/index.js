@@ -14,9 +14,9 @@ window.addEventListener("load", function () {
       280: {
         direction: "horizontal",
         spaceBetween: 14,
-        slidesPerView: 3.2,
+        slidesPerView: 3.5,
       },
-      890: {
+      968: {
         direction: "vertical",
         spaceBetween: 20,
         slidesPerView: 'auto',

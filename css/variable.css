@@ -2,8 +2,12 @@
     --main-color:#71DC90;
     --dark-color:#010201;
     --white-color:#fff;
+    --merch-color:#AB0000;
+    --merch-desc:#75858B;
     --space-small:1rem;
     --space-medium:2rem;
     --space-large:4rem;
     --space-Xlarge:7rem;
+    --font-weight-bold:700;
+    --font-weight-light:300;
 }

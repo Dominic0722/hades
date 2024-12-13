@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .product-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-image img {
+    width: 400px; /* Adjust size */
+    height: auto;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+}
+
+.thumbnails {
+    display: flex;
+    gap: 10px;
+}
+
+.thumbnails img {
+    width: 80px; /* Thumbnail size */
+    height: auto;
+    cursor: pointer;
+    border: 2px solid #ccc;
+    transition: border-color 0.3s ease;
+}
+
+.thumbnails img:hover {
+    border-color: #71DC90; /* Highlight color on hover */
+}
+
+    </style>
+</head>
+<body>
+    <div class="product-images">
+        <!-- Main large image -->
+        <div class="main-image">
+            <img id="largeImage" src="./img/hades merch/item1/item1_front.png" alt="Large View">
+        </div>
+    
+        <!-- Thumbnails -->
+        <div class="thumbnails">
+            <img src="./img/hades merch/item1/product_supergiant_hoodie_photo1.png" alt="Thumbnail 1" onclick="changeImage(this)">
+            <img src="./img/hades merch/item1/product_supergiant_hoodie_photo2.png" alt="Thumbnail 2" onclick="changeImage(this)">
+            <img src="./img/hades merch/item1/product_supergiant_hoodie_photo3.png" alt="Thumbnail 3" onclick="changeImage(this)">
+            <img src="./img/hades merch/item1/product_supergiant_hoodie_photo4.png" alt="Thumbnail 4" onclick="changeImage(this)">
+            <img src="./img/hades merch/item1/product_supergiant_hoodie_photo5.png" alt="Thumbnail 5" onclick="changeImage(this)">
+            <img src="./img/hades merch/item1/product_supergiant_hoodie_photo1.png" alt="Thumbnail 6" onclick="changeImage(this)">
+        </div>
+    </div>
+<script>
+    function changeImage(thumbnail) {
+    const largeImage = document.getElementById('#largeImage');
+    largeImage.src = thumbnail.src; // Update the large image source to the thumbnail's source
+}
+
+</script>    
+
+</body>
+</html>

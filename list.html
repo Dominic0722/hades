@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,30 +13,50 @@
     <link rel="stylesheet" href="./css/variable.css">
     <link rel="stylesheet" href="./css/media.css">
     <link rel="stylesheet" href="./css/scroll.css">
-    <script src="./js/jquery-1.12.3.js"></script>
-    <script src="./js/index.js"></script>
+
+
     <!-- alegreya font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap"
         rel="stylesheet">
 
+    <!-- montserrat font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- roboto font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- js -->
+    <script src="./js/merch_list.js"></script>
+    <script src="./js/merch.js"></script>
+    <script src="./js/list.js"></script>
+
+
 </head>
-<body>
-    <header>
+
+<body class="merch_body">
+
+    <div class="header_list">
         <section class="h_top">
             <h1 class="sg_logo"><img src="./img/logo_sg.png" alt="SuperGiants logo"></h1>
-            <div class="searchbar">
+            <div class="searchbar_pc">
                 <input type="text" placeholder="Search" class="search-input">
                 <span class="search_btn"><img src="./img/mag.svg" alt="mag"></span>
             </div>
+
             <div class="account_cart">
-                <p>LOGIN<span><img src="./img/admin.svg" alt="account"></span><span><img src="./img/cart.svg" alt="cart"></span></p>
-                
+                <p>LOGIN<span><img src="./img/admin.svg" alt="account"></span><span><img src="./img/cart.svg"
+                            alt="cart"></span></p>
             </div>
         </section>
         <section class="h_bottom">
-            <ul>
+            <ul class="commonFrame merch_gnb_mo">
                 <li><a href="#">SHOP BY GAME</a></li>
                 <li><a href="#">APPAREL</a></li>
                 <li><a href="#">COLLECTIBLES</a></li>
@@ -44,7 +65,567 @@
                 <li><a href="#">CHARACTERS</a></li>
                 <li><a href="#">SALE</a></li>
             </ul>
+            <div class="searchbar_mo">
+                <input type="text" placeholder="Search" class="search-input">
+                <span class="search_btn"><img src="./img/mag.svg" alt="mag"></span>
+            </div>
         </section>
-    </header>
+    </div>
+    <div class="merch_hero">
+        <div class="merch_hero_img">
+            <img src="./img/background/merch-hero2.jpg" alt="hero hoodie img">
+        </div>
+        <div class="merch_hero_txt">
+            <h5>Supergiant Games 15th
+                Anniversary Zip-Up Hoodie
+            </h5>
+            <p class="merch_hero_p">Proper story's supposed to start at the beginning...
+                ain't so simple with this one.</p>
+        </div>
+    </div>
+    <!-- modal -->
+    <div class="overlay"></div>
+    <div class="filter_modal" id="filter_modal">
+        <div class="filter_btn_close"><img src="./img/close.svg" alt="close"></div>
+        <div class="filter_modal_wrap">
+            <!-- game -->
+            <ul class="on">
+                <a href="#" id="toggleButton"><span>GAME</span><span><img src="./img/merch_arrow.svg"
+                            alt="arrow"></span></a>
+                <li><a href="#">
+                        <label for="Bastion" class="checkbox">
+                            <input type="checkbox" id="Bastion">
+                            <span class="custom_checkbox"></span>
+                        </label>
+                        <span>Bastion</span>
+                    </a></li>
+                <li><a href="#">
+                        <label for="Hades" class="checkbox">
+                            <input type="checkbox" id="Hades">
+                            <span class="custom_checkbox"></span>
+                        </label>
+                        <span>Hades</span>
+                    </a></li>
+                <li><a href="#">
+                        <label for="Pyre" class="checkbox">
+                            <input type="checkbox" id="Pyre">
+                            <span class="custom_checkbox"></span>
+                        </label>
+                        <span>Pyre</span>
+                    </a></li>
+                <li><a href="#">
+                        <label for="Transistor" class="checkbox">
+                            <input type="checkbox" id="Transistor">
+                            <span class="custom_checkbox"></span>
+                        </label>
+                        <span>Transistor</span>
+                    </a></li>
+                <li><a href="#">
+                        <label for="Zagreus" class="checkbox">
+                            <input type="checkbox" id="Zagreus">
+                            <span class="custom_checkbox"></span>
+                        </label>
+                        <span>Zagreus</span>
+                    </a></li>
+            </ul>
+            <!-- type -->
+            <ul class="on">
+                <a href="#" id="toggleButton"><span>TYPE</span><span><img src="./img/merch_arrow.svg"
+                            alt="arrow"></span></a>
+                <li><a href="#">
+                        <label for="Art & Posters" class="checkbox">
+                            <input type="checkbox" id="Art & Posters">
+                            <span class="custom_checkbox"></span>
+                        </label>
+                        <span>Art & Posters</span>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <label for="Combo Pack" class="checkbox">
+                            <input type="checkbox" id="Combo Pack">
+                            <span class="custom_checkbox"></span>
+                        </label>
+                        <span>Combo Pack</span>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <label for="Desk Mats" class="checkbox">
+                            <input type="checkbox" id="Desk Mats">
+                            <span class="custom_checkbox"></span>
+                        </label>
+                        <span>Desk Mats</span>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <label for="Figurines" class="checkbox">
+                            <input type="checkbox" id="Figurines">
+                            <span class="custom_checkbox"></span>
+                        </label>
+                        <span>Figurines</span>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <label for="Jackets" class="checkbox">
+                            <input type="checkbox" id="Jackets">
+                            <span class="custom_checkbox"></span>
+                        </label>
+                        <span>Jackets</span>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <label for="Keychains" class="checkbox">
+                            <input type="checkbox" id="Keychains">
+                            <span class="custom_checkbox"></span>
+                        </label>
+                        <span>Keychains</span>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <label for="Lapel Pins" class="checkbox">
+                            <input type="checkbox" id="Lapel Pins">
+                            <span class="custom_checkbox"></span>
+                        </label>
+                        <span>Lapel Pins</span>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <label for="Long-Sleeved Shirts" class="checkbox">
+                            <input type="checkbox" id="Long-Sleeved Shirts">
+                            <span class="custom_checkbox"></span>
+                        </label>
+                        <span>Long-Sleeved Shirts</span>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <label for="Music" class="checkbox">
+                            <input type="checkbox" id="Music">
+                            <span class="custom_checkbox"></span>
+                        </label>
+                        <span>Music</span>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <label for="Plushes" class="checkbox">
+                            <input type="checkbox" id="Plushes">
+                            <span class="custom_checkbox"></span>
+                        </label>
+                        <span>Plushes</span>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <label for="T-Shirts" class="checkbox">
+                            <input type="checkbox" id="T-Shirts">
+                            <span class="custom_checkbox"></span>
+                        </label>
+                        <span>T-Shirts</span>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <label for="Videos1" class="checkbox">
+                            <input type="checkbox" id="Videos1">
+                            <span class="custom_checkbox"></span>
+                        </label>
+                        <span>Videos</span>
+                    </a>
+                </li>
+            </ul>
+            <!-- characters -->
+            <ul class="on">
+                <a href="#" id="toggleButton"><span>CHARACTERS</span><span><img src="./img/merch_arrow.svg"
+                            alt="arrow"></span></a>
+                <li><a href="#">
+                        <label for="Cerberus" class="checkbox">
+                            <input type="checkbox" id="Cerberus">
+                            <span class="custom_checkbox"></span>
+                        </label>
+                        <span>Cerberus</span>
+                    </a></li>
+                <li><a href="#">
+                        <label for="Chaos" class="checkbox">
+                            <input type="checkbox" id="Chaos">
+                            <span class="custom_checkbox"></span>
+                        </label>
+                        <span>Chaos</span>
+                    </a></li>
+                <li><a href="#">
+                        <label for="Dusa" class="checkbox">
+                            <input type="checkbox" id="Dusa">
+                            <span class="custom_checkbox"></span>
+                        </label>
+                        <span>Dusa</span>
+                    </a></li>
+                <li><a href="#">
+                        <label for="Hypnos" class="checkbox">
+                            <input type="checkbox" id="Hypnos">
+                            <span class="custom_checkbox"></span>
+                        </label>
+                        <span>Hypnos</span>
+                    </a></li>
+                <li><a href="#">
+                        <label for="Lord Hades" class="checkbox">
+                            <input type="checkbox" id="Lord Hades">
+                            <span class="custom_checkbox"></span>
+                        </label>
+                        <span>Lord Hades</span>
+                    </a></li>
+                <li><a href="#">
+                        <label for="Megaera" class="checkbox">
+                            <input type="checkbox" id="Megaera">
+                            <span class="custom_checkbox"></span>
+                        </label>
+                        <span>Megaera</span>
+                    </a></li>
+                <li><a href="#">
+                        <label for="Nyx" class="checkbox">
+                            <input type="checkbox" id="Nyx">
+                            <span class="custom_checkbox"></span>
+                        </label>
+                        <span>Nyx</span>
+                    </a></li>
+                <li><a href="#">
+                        <label for="Skelly" class="checkbox">
+                            <input type="checkbox" id="Skelly">
+                            <span class="custom_checkbox"></span>
+                        </label>
+                        <span>Skelly</span>
+                    </a></li>
+                <li><a href="#">
+                        <label for="Thanatos" class="checkbox">
+                            <input type="checkbox" id="Thanatos">
+                            <span class="custom_checkbox"></span>
+                        </label>
+                        <span>Thanatos</span>
+                    </a></li>
+                <li><a href="#">
+                        <label for="Tisiphone" class="checkbox">
+                            <input type="checkbox" id="Tisiphone">
+                            <span class="custom_checkbox"></span>
+                        </label>
+                        <span>Tisiphone</span>
+                    </a></li>
+                <li><a href="#">
+                        <label for="Zagreus" class="checkbox">
+                            <input type="checkbox" id="Zagreus">
+                            <span class="custom_checkbox"></span>
+                        </label>
+                        <span>Zagreus</span>
+                    </a></li>
+            </ul>
+
+        </div>
+    </div>
+    <!--  -->
+
+
+    <div class=" product_number merch_txt_desc">28 products
+    </div>
+
+    <!--pc main 안에 aside/grid_box 나란히 flex -->
+    <!-- tab부터 aside display:none -->
+    <!-- main -->
+    <div class="merch_list_main">
+
+        <!-- aside -->
+        <aside class="merch_p">
+            <div class="filter">
+                <a href="#">
+                    <p>GAME</p>
+                    <img src="./img/merch_arrow.svg" alt="arrow">
+                </a>
+            </div>
+
+            <ul class="filter_list show">
+                <li>
+                    <label for="Bastion" class="checkbox">
+                        <input type="checkbox" id="Bastion">
+                        <span class="custom_checkbox"></span>
+                    </label>
+                    <P>Bastion</P>
+                </li>
+                <li>
+                    <label for="Hades" class="checkbox">
+                        <input type="checkbox" id="Hades">
+                        <span class="custom_checkbox"></span>
+                    </label>
+                    <P>Hades</P>
+                </li>
+                <li>
+                    <label for="Pyre" class="checkbox">
+                        <input type="checkbox" id="Pyre">
+                        <span class="custom_checkbox"></span>
+                    </label>
+                    <P>Pyre</P>
+                </li>
+                <li>
+                    <label for="Transistor" class="checkbox">
+                        <input type="checkbox" id="Transistor">
+                        <span class="custom_checkbox"></span>
+                    </label>
+                    <P>Transistor</P>
+                </li>
+                <li>
+                    <label for="Zagreus" class="checkbox">
+                        <input type="checkbox" id="Zagreus">
+                        <span class="custom_checkbox"></span>
+                    </label>
+                    <P>Zagreus</P>
+                </li>
+            </ul>
+            <div class="filter">
+                <a href="#">
+                    <p>TYPE</p>
+                    <img src="./img/merch_arrow.svg" alt="arrow">
+                </a>
+            </div>
+            <ul class="filter_list show">
+                <li>
+                    <label for="Art & Posters" class="checkbox">
+                        <input type="checkbox" id="Art & Posters">
+                        <span class="custom_checkbox"></span>
+                    </label>
+                    <P>Art & Posters</P>
+                </li>
+                <li>
+                    <label for="Combo Pack" class="checkbox">
+                        <input type="checkbox" id="Combo Pack">
+                        <span class="custom_checkbox"></span>
+                    </label>
+                    <P>Combo Pack</P>
+                </li>
+                <li>
+                    <label for="Desk Mats" class="checkbox">
+                        <input type="checkbox" id="Desk Mats">
+                        <span class="custom_checkbox"></span>
+                    </label>
+                    <P>Desk Mats</P>
+                </li>
+                <li>
+                    <label for="Figurines" class="checkbox">
+                        <input type="checkbox" id="Figurines">
+                        <span class="custom_checkbox"></span>
+                    </label>
+                    <P>Figurines</P>
+                </li>
+                <li>
+                    <label for="Jackets" class="checkbox">
+                        <input type="checkbox" id="Jackets">
+                        <span class="custom_checkbox"></span>
+                    </label>
+                    <P>Jackets</P>
+                </li>
+                <li>
+                    <label for="Keychains" class="checkbox">
+                        <input type="checkbox" id="Keychains">
+                        <span class="custom_checkbox"></span>
+                    </label>
+                    <P>Keychains</P>
+                </li>
+                <li>
+                    <label for="Lapel Pins" class="checkbox">
+                        <input type="checkbox" id="Lapel Pins">
+                        <span class="custom_checkbox"></span>
+                    </label>
+                    <P>Lapel Pins</P>
+                </li>
+                <li>
+                    <label for="Long-Sleeved Shirts" class="checkbox">
+                        <input type="checkbox" id="Long-Sleeved Shirts">
+                        <span class="custom_checkbox"></span>
+                    </label>
+                    <P>Long-Sleeved Shirts</P>
+                </li>
+                <li>
+                    <label for="Music" class="checkbox">
+                        <input type="checkbox" id="Music">
+                        <span class="custom_checkbox"></span>
+                    </label>
+                    <P>Music</P>
+                </li>
+                <li>
+                    <label for="Plushes" class="checkbox">
+                        <input type="checkbox" id="Plushes">
+                        <span class="custom_checkbox"></span>
+                    </label>
+                    <P>Plushes</P>
+                </li>
+                <li>
+                    <label for="T-Shirts" class="checkbox">
+                        <input type="checkbox" id="T-Shirts">
+                        <span class="custom_checkbox"></span>
+                    </label>
+                    <P>T-Shirts</P>
+                </li>
+                <li>
+                    <label for="Videos" class="checkbox">
+                        <input type="checkbox" id="Videos">
+                        <span class="custom_checkbox"></span>
+                    </label>
+                    <P>Videos</P>
+                </li>
+            </ul>
+            <div class="filter">
+                <a href="#">
+                    <p>CHARACTERS</p>
+                    <img src="./img/merch_arrow.svg" alt="arrow">
+                </a>
+            </div>
+            <ul class="filter_list show">
+                <li>
+                    <label for="Cerberus" class="checkbox">
+                        <input type="checkbox" id="Cerberus">
+                        <span class="custom_checkbox"></span>
+                    </label>
+                    <P>Cerberus</P>
+                </li>
+                <li>
+                    <label for="Chaos" class="checkbox">
+                        <input type="checkbox" id="Chaos">
+                        <span class="custom_checkbox"></span>
+                    </label>
+                    <P>Chaos</P>
+                </li>
+                <li>
+                    <label for="Dusa" class="checkbox">
+                        <input type="checkbox" id="Dusa">
+                        <span class="custom_checkbox"></span>
+                    </label>
+                    <P>Dusa</P>
+                </li>
+                <li>
+                    <label for="Hypnos" class="checkbox">
+                        <input type="checkbox" id="Hypnos">
+                        <span class="custom_checkbox"></span>
+                    </label>
+                    <P>Hypnos</P>
+                </li>
+                <li>
+                    <label for="Lord Hades" class="checkbox">
+                        <input type="checkbox" id="Lord Hades">
+                        <span class="custom_checkbox"></span>
+                    </label>
+                    <P>Lord Hades</P>
+                </li>
+                <li>
+                    <label for="Megaera" class="checkbox">
+                        <input type="checkbox" id="Megaera">
+                        <span class="custom_checkbox"></span>
+                    </label>
+                    <P>Megaera</P>
+                </li>
+                <li>
+                    <label for="Nyx" class="checkbox">
+                        <input type="checkbox" id="Nyx">
+                        <span class="custom_checkbox"></span>
+                    </label>
+                    <P>Nyx</P>
+                </li>
+                <li>
+                    <label for="Skelly" class="checkbox">
+                        <input type="checkbox" id="Skelly">
+                        <span class="custom_checkbox"></span>
+                    </label>
+                    <P>Skelly</P>
+                </li>
+                <li>
+                    <label for="Thanatos" class="checkbox">
+                        <input type="checkbox" id="Thanatos">
+                        <span class="custom_checkbox"></span>
+                    </label>
+                    <P>Thanatos</P>
+                </li>
+                <li>
+                    <label for="Tisiphone" class="checkbox">
+                        <input type="checkbox" id="Tisiphone">
+                        <span class="custom_checkbox"></span>
+                    </label>
+                    <P>Tisiphone</P>
+                </li>
+                <li>
+                    <label for="Zagreus" class="checkbox">
+                        <input type="checkbox" id="Zagreus">
+                        <span class="custom_checkbox"></span>
+                    </label>
+                    <P>Zagreus</P>
+                </li>
+            </ul>
+
+        </aside>
+        <!-- grid_box -->
+        <div class="commonFrame boxes">
+            <div class=" filter_box">
+                <span class="filter_p" id="modal_open"><a href="#">Filter</a></span>
+            </div>
+            <div class="feature_box">
+                <ul>
+                    <a href="#"><span>Feature</span><span><img src="./img/merch_arrow.svg" alt="arrow"></span></a>
+                    <li><a href="#">Featured</a></li>
+                    <li><a href="#">Alphabetically, A-Z</a></li>
+                    <li><a href="#">Alphabetically, Z-A</a></li>
+                    <li><a href="#">Price, low to high</a></li>
+                    <li><a href="#">Price, high to low</a></li>
+                    <li><a href="#">Date, old to new</a></li>
+                    <li><a href="#">Date, new to old</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="grid_box" id="grid_box">
+            
+            
+        </div>
+    </div>
+    <script>
+        let btn_filter = document.querySelectorAll(".filter_modal_wrap >ul>a")
+
+
+
+        let open_modal = document.querySelector("#modal_open")
+        let modal = document.querySelector(".filter_modal")
+        let modal_close = document.querySelector(".filter_btn_close")
+        let overlay = document.querySelector(".overlay")
+        let feature_btn = document.querySelector(".feature_box>ul>a")
+        let feature_box = document.querySelector(".feature_box")
+
+
+
+        open_modal.addEventListener("click", function () {
+            modal.classList.add("active")
+            overlay.classList.add("overlay_on")
+        })
+        modal_close.addEventListener("click", function () {
+            modal.classList.remove("active")
+            overlay.classList.remove("overlay_on")
+        })
+
+
+        feature_btn.addEventListener("click", function () {
+            feature_box.classList.toggle("on")
+        })
+
+        btn_filter.forEach(function (btn, index) {
+            btn.addEventListener("click", function () {
+                btn.parentElement.classList.toggle("on")
+            })
+        })
+
+        document.querySelector(".commonFrame.boxes").insertAdjacentHTML(
+  "afterend",
+  `
+  <div class="feature_box">
+    <ul>
+      <a href="#"><span>Feature</span><span><img src="./img/merch_arrow.svg" alt="arrow"></span></a>
+      <li><a href="#">Featured</a></li>
+      <li><a href="#">Alphabetically, A-Z</a></li>
+      <li><a href="#">Alphabetically, Z-A</a></li>
+      <li><a href="#">Price, low to high</a></li>
+      <li><a href="#">Price, high to low</a></li>
+      <li><a href="#">Date, old to new</a></li>
+      <li><a href="#">Date, new to old</a></li>
+    </ul>
+  </div>
+  `
+);
+
+    </script>
 </body>
+
 </html>

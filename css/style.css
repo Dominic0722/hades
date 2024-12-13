@@ -19,6 +19,7 @@
     width: 100% !important;
     pointer-events: none;
 }
+
 .logo {
     width: 50px;
     height: 50px;
@@ -36,37 +37,38 @@ body {
     background-color: var(--dark-color);
 }
 
+
 .gnb :hover a {
     color: var(--main-color);
 }
-.gnb{
+
+.gnb {
     padding-right: 10px;
 }
+
 .hero1 {
     position: relative;
     width: 100%;
     height: 100vh;
     box-sizing: border-box;
-    overflow: hidden; 
-    display:flex;
+    overflow: hidden;
+    display: flex;
     color: #fff;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    z-index: 1; 
-    
-    
+    z-index: 1;
 }
 
 .hades2logo {
     width: 600px;
-    margin-left: 10vw;
+    margin-left: 10px;
 
 }
 
 .hero1txt {
     width: 600px;
-    margin-left: 10vw;
+    margin-left: 10px;
 }
 
 .hero1txt h2:last-of-type {
@@ -158,14 +160,14 @@ canvas {
     color: white;
     font-size: 30px;
     z-index: 2;
-    
+
     text-align: center;
 }
 
 .bg {
     background: url('../img/background/smoke-effect3.png') no-repeat center center / cover;
     background-attachment: fixed;
-    
+
 
 }
 
@@ -206,7 +208,8 @@ video {
     text-align: center;
     color: var(--main-color);
 }
-.swiper-slide{
+
+.swiper-slide {
     display: flex;
 }
 
@@ -215,6 +218,7 @@ table {
     width: 600px;
 
 }
+
 th,
 td {
     text-align: start;
@@ -249,20 +253,20 @@ table th span {
 
 .commonFrame.hero {
     position: relative;
-   
-   
+
+
     height: 100%;
 }
 
 .station1 {
-    
+
     width: 100%;
     height: 100%;
     position: absolute !important;
     left: 0;
     top: 0;
     z-index: -1 !important;
-    
+
 }
 
 .station1 .swiper-slide {
@@ -290,7 +294,7 @@ table th span {
     height: 100vh;
     flex-direction: column;
     display: flex;
-    
+
 }
 
 .station2 img {
@@ -303,48 +307,54 @@ table th span {
     height: 260px;
     /* 슬라이드 높이를 설정하여 spaceBetween이 적용되도록 */
 }
-.station3{
+
+.station3 {
     width: 50%;
     height: 100%;
     text-align: left;
     margin-top: 50px;
-    
+
     color: #fff;
-    
+
 }
 
-.station3 .train{
+.station3 .train {
     width: 100%;
     height: 100%;
     position: relative;
     z-index: 555;
 }
-.station3 li *{
+
+.station3 li * {
 
     margin: 20px 0;
-    
+
 }
-.station3 li p{
+
+.station3 li p {
     overflow: auto;
     height: 250px;
     margin-bottom: 30px;
 }
-.station3 .train>li{
+
+.station3 .train>li {
     width: 100%;
     height: 100%;
     position: absolute;
     z-index: 5446;
     left: 0;
-    top: 0 ;
+    top: 0;
     opacity: 0;
     pointer-events: none;
     transition: all .5s ease 0s;
-    
+
 }
-.station3 .train>li.on{
+
+.station3 .train>li.on {
     opacity: 1;
     pointer-events: auto;
 }
+
 .btn_common {
     background: url(../img/ico/btn_common.png) no-repeat 50% 50% / cover;
     width: 200px;
@@ -352,17 +362,22 @@ table th span {
 }
 
 /* merch */
-.searchbar {
+.sg_logo {
+    width: 165px;
+    height: auto;
+}
+
+.searchbar_pc {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 27px;
     border-radius: 5px;
-    padding: 5px 5px;
+    padding: 5px 10px;
     background-color: #ffffff;
-  }
-  
-  .search-input {
+}
+
+.search-input {
     border: none;
     outline: none;
     padding: 8px 1px;
@@ -371,30 +386,418 @@ table th span {
     width: 300px;
     box-sizing: border-box;
     height: 30px;
-  }
-  .search_btn {
-    
+}
+
+.search_btn {
     cursor: pointer;
     display: flex;
     justify-content: center;
-  }
-  header{
-    display: block;
+}
+
+.header_list {
     width: 100%;
-    height: 145px;
-    display: 1px solid red;
-  }
-  .h_top{
+    height: 100%;
+    color: #fff;
+    background-color: var(--dark-color);
+}
+
+
+.h_top {
     height: 100px;
-    width: 90vw;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     align-items: center;
-  }
-  .account_cart p{
+}
+
+.h_top>* {
+    flex-shrink: 0;
+}
+
+.account_cart p {
     display: flex;
     gap: 10px;
     justify-content: space-between;
     align-items: center;
+}
+
+.account_cart span {
+    width: 25px;
+}
+
+.h_bottom ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+}
+
+.h_bottom {
+    background-color: var(--merch-color);
+    height: 45px;
+    width: 100%;
+}
+
+.merch_hero_img {
+    width: 100%;
+    height: auto;
+    position: relative;
+
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: block;
+    }
+}
+
+.merch_hero_txt {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.merch_list_main {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    display: flex;
+}
+
+.product_number.merch_txt_desc {
+    margin-top: var(--space-small);
+    margin-bottom: var(--space-medium);
+    margin-left: 3rem;
+    width: 200px;
+}
+
+.filter {
+    width: 200px;
+}
+
+.filter a {
+    display: flex;
+    width: 200px;
+    height: 45px;
+    border-bottom: .5px solid black;
+    justify-content: space-between;
+    align-items: center;
+
+    & img {
+        width: 14px;
+
+    }
+}
+
+.filter_list li {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.filter p {
+    font-weight: 600;
+}
+
+.filter_list {
+    display: block;
+    margin-top: 10px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 1s ease 0s;
+    width: 100%;
+}
+
+.filter_list.show {
+    max-height: 300px;
+}
+
+aside {
+    width: 250px;
+}
+
+/* grid */
+.grid_box {
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    flex-grow: 1;
+    row-gap: 30px;
+    column-gap: 20px;
+    width: calc(100% - 250px);
+
+}
+
+.product_info {
+    display: flex;
+    justify-content: space-between;
+    padding-right: var(--space-small);
+}
+
+/* figure {
+    padding-left: 1rem;
+    padding-right: 1rem;
+} */
+
+figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+figcaption {
+    margin-top: 15px;
+}
+
+.super {
+    font-size: .8rem;
+    vertical-align: super;
+}
+
+.product_price {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.product_description {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--merch-desc);
+}
+
+.product_img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+    box-shadow: 6px 4px 6px rgba(0, 0, 0, 0.1);
+    /* X-offset, Y-offset, Blur-radius, Shadow-color */
+    border-radius: 8px;
+    /* Optional: adds rounded corners */
+}
+
+/* detail */
+.product_detail {
+    display: flex;
+    gap: 1.5rem;
+
+}
+
+.product_imgs {
+    flex: 9;
+}
+
+.product_page {
+    flex: 4;
+}
+
+.product_main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin-bottom: var(--space-medium);
+}
+
+.product_gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-small);
+    cursor: pointer;
+}
+
+.product_rating a {
+    display: flex;
+    gap: 3px;
+}
+
+.product_rating {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.stars img {
+    width: 15px;
+}
+
+.reviews {
+    font-weight: 700;
+}
+
+.size_button {
+    background-color: transparent;
+    border: 1px solid #000;
+    width: 34px;
+    height: 34px;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.size_button:nth-of-type(1) {
+    border: 1px dashed;
+}
+
+.size_button:nth-of-type(3) {
+    border: 1px solid var(--merch-color);
+}
+
+.product_size_options label {
+    display: none;
+}
+
+.product_size_options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+}
+
+.size_guide {
+    text-decoration: underline;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.add_to_cart_button {
+    background-color: var(--merch-color);
+    width: 400px;
+    height: 45px;
+    border-radius: 5px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: var(--font-weight-bold);
+}
+
+.product_desc p:nth-child(1) {
+    font-weight: var(--font-weight-bold);
+    margin-top: 3rem;
+}
+
+.product_desc p:nth-child(2) {
+    font-weight: var(--font-weight-light);
+}
+
+.product_desc p {
+    margin-bottom: var(--space-small);
+}
+
+.product_page>* {
+    margin-bottom: var(--space-medium);
+}
+
+.product_header>* {
+    margin-bottom: var(--space-medium);
+}
+
+.price_rating {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.boxes img{
+    transform: rotate(180deg);
+}
+.filter_box {
+    display: flex;
+    margin-top: var(--space-small);
+    font-size: 16px;
+    border: 1px solid black;
+    /* padding: 15px 40px; */
+    margin-bottom: var(--space-medium);
+    width: 150px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.overlay {
+    display: none; /* 기본적으로 숨김 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.349);
+    z-index: 1;
   }
+  .overlay.overlay_on{
+    display: block;
+  }
+.filter_modal{
+    position: fixed;
+    left: -300px;
+    top: 0;
+    width: 250px;
+    height: auto;
+    background-color: #fff;
+    height: 100%;
+    padding: 2rem;
+    box-sizing: border-box;
+    z-index: 2;
+    overflow-y: auto;
+    transition: all .5s ease 0s;
+    pointer-events: none;
+    
+
+}
+.filter_modal.active{
+    left: 0;
+    
+    pointer-events: auto;
+}
+.filter_modal_wrap{
+    width: 182px;
+    & ul{
+        margin-bottom: 15px;
+        max-height: 41px;
+        overflow: hidden;
+        transition: all .5s ease 0s;
+    }
+    & ul.on{
+        max-height: 500px;
+    }
+ 
+    & ul>a{
+        width: 182px;
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid black;
+        margin-bottom: 5px;
+        font-weight: 700;
+        
+    }
+    & a img{
+        width: 15px;
+    }
+    & ul>li>a{
+        width: 182px;
+        height: 35px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+}
+.filter_btn_close{
+    margin-bottom: 20px;
+    text-align: end;
+    cursor: pointer;
+}
+.filter_btn_close img{
+    width: 24px;
+}

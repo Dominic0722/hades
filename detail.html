@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>detail</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/variable.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/scroll.css">
+
+
+    <!-- alegreya font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
+    <!-- montserrat font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- roboto font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- js -->
+    <script src="./js/merch_list.js"></script>
+    <script src="./js/detail.js"></script>
+    <script src="./js/merch.js"></script>
+
+
+</head>
+
+<body class="merch_body">
+    <div class="header_list">
+        <section class="h_top">
+            <h1 class="sg_logo"><img src="./img/logo_sg.png" alt="SuperGiants logo"></h1>
+            <div class="searchbar_pc">
+                <input type="text" placeholder="Search" class="search-input">
+                <span class="search_btn"><img src="./img/mag.svg" alt="mag"></span>
+            </div>
+
+            <div class="account_cart">
+                <p>LOGIN<span><img src="./img/admin.svg" alt="account"></span><span><img src="./img/cart.svg"
+                            alt="cart"></span></p>
+            </div>
+        </section>
+        <section class="h_bottom">
+            <ul class="commonFrame merch_gnb_mo">
+                <li><a href="#">SHOP BY GAME</a></li>
+                <li><a href="#">APPAREL</a></li>
+                <li><a href="#">COLLECTIBLES</a></li>
+                <li><a href="#">ACCESSORIES</a></li>
+                <li><a href="#">BOOKS & ART</a></li>
+                <li><a href="#">CHARACTERS</a></li>
+                <li><a href="#">SALE</a></li>
+            </ul>
+            <div class="searchbar_mo">
+                <input type="text" placeholder="Search" class="search-input">
+                <span class="search_btn"><img src="./img/mag.svg" alt="mag"></span>
+            </div>
+        </section>
+    </div>
+    <div class="merch_hero">
+        <div class="merch_hero_img">
+            <img src="./img/background/merch-hero2.jpg" alt="hero hoodie img">
+        </div>
+        <div class="merch_hero_txt">
+            <h5>Supergiant Games 15th
+                Anniversary Zip-Up Hoodie
+            </h5>
+            <p class="merch_hero_p">Proper story's supposed to start at the beginning...
+                ain't so simple with this one.</p>
+        </div>
+    </div>
+    <!-- product number -->
+     <div class="wrddddap" id="wrap">
+    <div class="commonFrame "><a href=""> Home</a> / Supergiant Games 15th Anniversary Zip-Up Hoodie
+    </div>
+    <section class="product_detail commonFrame">
+        
+        <div class="product_imgs">
+            <!-- main img -->
+            <div class="product_main">
+                <img src="./img/hades merch/item1/product_supergiant_hoodie_main.png" alt="Product Front View"
+                    class="main_img" id="main_img">
+            </div>
+            <!-- gallery imgs -->
+            <div class="product_gallery">
+                <img src="./img/hades merch/item1/product_supergiant_hoodie_main.png" alt="Gallery Image 1"
+                    class="gallery_img" onerror="this.style.display='none';" onclick="changeImage(this)">
+                <img src="./img/hades merch/item1/product_supergiant_hoodie_photo2.png" alt="Gallery Image 2"
+                    class="gallery_img" onerror="this.style.display='none';" onclick="changeImage(this)">
+                <img src="./img/hades merch/item1/product_supergiant_hoodie_photo3.png" alt="Gallery Image 3"
+                    class="gallery_img" onerror="this.style.display='none';" onclick="changeImage(this)">
+                <img src="./img/hades merch/item1/product_supergiant_hoodie_photo4.png" alt="Gallery Image 4"
+                    class="gallery_img" onerror="this.style.display='none';"onclick="changeImage(this)">
+                <img src="./img/hades merch/item1/product_supergiant_hoodie_photo5.png" alt="Gallery Image 5"
+                    class="gallery_img" onerror="this.style.display='none';"onclick="changeImage(this)">
+                <img src="./img/hades merch/item1/product_supergiant_hoodie_photo6.png" alt="Gallery Image 6"
+                    class="gallery_img" onerror="this.style.display='none';"onclick="changeImage(this)">
+            </div>
+        </div>
+        <div class="product_page">
+            <div class="product_header">
+                <!-- title -->
+                <h6 class="product_title">Supergiant Games 15th Anniversary Zip-Up Hoodie</h6>
+                <div class="price_rating">
+                    <!-- price -->
+                    <div class="product_price"><span class="super">$</span>69</div>
+                    <div class="product_rating">
+                        <span class="stars">
+                            <a href="#">
+                                <!-- stars -->
+                                <img src="./img/star_full.svg" alt="star full">
+                                <img src="./img/star_full.svg" alt="star full">
+                                <img src="./img/star_full.svg" alt="star full">
+                                <img src="./img/star_half.svg" alt="star half">
+                                <img src="./img/star_empty.svg" alt="star empty">
+                            </a>
+                        </span>
+                        <!-- reviews -->
+                        <span class="reviews">(1,204)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product_size_options">
+                <label for="size_buttons">Size:</label>
+                <div id="size_buttons" class="size_buttons">
+                    <button class="size_button" data-size="xs">XS</button>
+                    <button class="size_button" data-size="s">S</button>
+                    <button class="size_button" data-size="m">M</button>
+                    <button class="size_button" data-size="l">L</button>
+                    <button class="size_button" data-size="xl">XL</button>
+                    <button class="size_button" data-size="2x">2X</button>
+                    <button class="size_button" data-size="3x">3X</button>
+                    <button class="size_button" data-size="4x">4X</button>
+                </div>
+                <a href="#" class="size_guide">Size Guide</a>
+            </div>
+            <div class="product_add_to_cart">
+                <button class="add_to_cart_button">ADD TO CART</button>
+            </div>
+            <div class="product_desc">
+                <p>DESCRIPTION</p>
+                <!-- desc -->
+                <p>Proper story’s supposed to start at the beginning... ain't so simple with this one.</p>
+                <p>This official Supergiant Games zip-up hoodie designed by Nina Matsumoto commemorates the studio’s
+                    15th anniversary, and features characters from each of its games: The Kid from Bastion (2011), Red
+                    from Transistor (2014), Jodariel from Pyre (2017), Zagreus from Hades (2020), and Melinoë from Hades
+                    II (2024, Early Access).</p>
+                <p>It’s printed front and back by Forward on midweight, poly-cotton hooded sweatshirts from District.
+                </p>
+            </div>
+        </div>
+    </section>
+</div>
+<script>
+    function changeImage(thumbnail) {
+    const main_img = document.getElementById('main_img');
+    main_img.src = thumbnail.src; // Update the large image source to the thumbnail's source
+}
+</script>
+</body>
+
+</html>

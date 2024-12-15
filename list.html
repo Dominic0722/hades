@@ -44,7 +44,7 @@
 
     <div class="header_list">
         <section class="h_top">
-            <h1 class="sg_logo"><img src="./img/logo_sg.png" alt="SuperGiants logo"></h1>
+            <a href="./index.html"><h1 class="sg_logo"><img src="./img/logo_sg.png" alt="SuperGiants logo"></h1></a>
             <div class="searchbar_pc">
                 <input type="text" placeholder="Search" class="search-input">
                 <span class="search_btn"><img src="./img/mag.svg" alt="mag"></span>
@@ -319,7 +319,23 @@
 
     <div class=" product_number merch_txt_desc">28 products
     </div>
-
+    <div class="commonFrame boxes">
+        <div class=" filter_box">
+            <span class="filter_p" id="modal_open"><a href="#">Filter</a></span>
+        </div>
+        <div class="feature_box">
+            <ul>
+                <a href="#"><span>Feature</span><span><img src="./img/merch_arrow.svg" alt="arrow"></span></a>
+                <li><a href="#">Featured</a></li>
+                <li><a href="#">Alphabetically, A-Z</a></li>
+                <li><a href="#">Alphabetically, Z-A</a></li>
+                <li><a href="#">Price, low to high</a></li>
+                <li><a href="#">Price, high to low</a></li>
+                <li><a href="#">Date, old to new</a></li>
+                <li><a href="#">Date, new to old</a></li>
+            </ul>
+        </div>
+    </div>
     <!--pc main 안에 aside/grid_box 나란히 flex -->
     <!-- tab부터 aside display:none -->
     <!-- main -->
@@ -551,28 +567,56 @@
 
         </aside>
         <!-- grid_box -->
-        <div class="commonFrame boxes">
-            <div class=" filter_box">
-                <span class="filter_p" id="modal_open"><a href="#">Filter</a></span>
-            </div>
-            <div class="feature_box">
-                <ul>
-                    <a href="#"><span>Feature</span><span><img src="./img/merch_arrow.svg" alt="arrow"></span></a>
-                    <li><a href="#">Featured</a></li>
-                    <li><a href="#">Alphabetically, A-Z</a></li>
-                    <li><a href="#">Alphabetically, Z-A</a></li>
-                    <li><a href="#">Price, low to high</a></li>
-                    <li><a href="#">Price, high to low</a></li>
-                    <li><a href="#">Date, old to new</a></li>
-                    <li><a href="#">Date, new to old</a></li>
-                </ul>
-            </div>
-        </div>
+
         <div class="grid_box" id="grid_box">
             
             
         </div>
+        
     </div>
+    <div class="number_containers">
+        <div class="box_number selected">1</div>
+        <div class="box_number">2</div>
+        <div class="box_number">3</div>
+
+    </div>
+
+
+    <footer>
+        <div class="footer">
+        <p>STAY CONNECTED</p>
+        <ul class="sns">
+            <li><a href="#"><img src="./img/sns_intsa.svg" alt="insta"></a></li>
+            <li><a href="#"><img src="./img/sns_youtube.svg" alt="youtube"></a></li>
+            <li><a href="#"><img src="./img/sns_twitterW.svg" alt="twitter"></a></li>
+            <li><a href="#"><img src="./img/sns_facebookW.svg" alt="facebook"></a></li>
+        </ul>
+        <div class="footer_email">
+            <a href="#">
+            <img src="./img/email.svg" alt="email">
+            <p>Join the <i>Supergiant Games Mailing List</i></p>
+        </a>
+        </div>
+        <div class="footer_info">
+            <h1><a href="#"><img src="./img/logo_sg.png" alt="supergiant logo"></a></h1>
+            <ul>
+                <li><a href="#">Hades II</a></li>
+                <li><a href="#">Hades</a></li>
+                <li><a href="#">Pyre</a></li>
+                <li><a href="#">Transistor</a></li>
+                <li><a href="#">Bastion</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </div>
+    </footer>
+
     <script>
         let btn_filter = document.querySelectorAll(".filter_modal_wrap >ul>a")
 
@@ -607,25 +651,31 @@
             })
         })
 
-        document.querySelector(".commonFrame.boxes").insertAdjacentHTML(
-  "afterend",
-  `
-  <div class="feature_box">
-    <ul>
-      <a href="#"><span>Feature</span><span><img src="./img/merch_arrow.svg" alt="arrow"></span></a>
-      <li><a href="#">Featured</a></li>
-      <li><a href="#">Alphabetically, A-Z</a></li>
-      <li><a href="#">Alphabetically, Z-A</a></li>
-      <li><a href="#">Price, low to high</a></li>
-      <li><a href="#">Price, high to low</a></li>
-      <li><a href="#">Date, old to new</a></li>
-      <li><a href="#">Date, new to old</a></li>
-    </ul>
-  </div>
-  `
-);
+//         // Get all product images
+// const productImages = document.querySelectorAll('.product_img');
+
+// productImages.forEach(img => {
+//     const originalSrc = img.src; // Save the original source
+//     const hoverSrc = img.dataset.hover; // Get the hover source
+
+//     // Change to hover image on mouseenter
+//     img.addEventListener('mouseenter', () => {
+//         if (hoverSrc) {
+//             img.src = hoverSrc;
+//         }
+//     });
+
+//     // Revert back to original image on mouseleave
+//     img.addEventListener('mouseleave', () => {
+//         img.src = originalSrc;
+//     });
+// });
+
+
+
 
     </script>
+
 </body>
 
 </html>

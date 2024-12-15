@@ -7,7 +7,9 @@ window.addEventListener("load",function(){
             <section class="grid_item">
             <a href="./detail.html?mid=${merch_array[i].mid}">
                 <figure>
-                    <img src="./img/hades merch/item${merch_array[i].mid+1}/${merch_array[i].thumbimg}" alt="hoodie" class="product_img">
+                    <img src="./img/hades merch/item${merch_array[i].mid+1}/${merch_array[i].thumbimg}" 
+                    data-hover="./img/hades merch/item${merch_array[i].mid+1}/${merch_array[i].hoverimg}"
+                    alt="hoodie" class="product_img">
                     <figcaption>
                         <div class="product_info">
                             <p class="product_title">${merch_array[i].mname}</p>
